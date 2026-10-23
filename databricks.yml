@@ -1,0 +1,29 @@
+bundle:
+  name: DABDemo
+
+
+include:
+  - src/*.yml
+  - src/env/*.yml
+  - resources/jobs/*.yml
+  - resources/pipelines/*.yml
+  - resources/schemas/*.yml
+
+
+#resources:
+  #REsources shoud be here
+
+permissions:
+  - user_name: newworkspace0@gmail.com
+    level: CAN_MANAGE
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace :
+      host: https://dbc-d4b394be-e3e5.cloud.databricks.com/
+
+  qa:
+    workspace :
+      host: https://dbc-d4b394be-e3e5.cloud.databricks.com/
