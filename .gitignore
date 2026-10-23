@@ -1,0 +1,28 @@
+# Databricks
+.project/
+.databricks/
+dbfs:/
+
+# Secrets & local environment overrides
+**/.databricks-secret/
+.env
+*.local.yml
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+
+# Build & logs
+logs/
+target/
+dist/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
